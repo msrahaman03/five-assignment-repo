@@ -34,6 +34,22 @@ const calls = document.getElementsByClassName('call-btn')
 
 
 
+          
+
+const copys = document.getElementsByClassName('copy-class')
+
+for(let copy of copys){
+          copy.addEventListener('click', function(){
+                    const copyTag = document.getElementById('copy-id')
+                    const copyIdStr =copyTag.innerText
+
+                    let copyId = parseInt(copyIdStr)
+                    copyId++
+
+                    copyTag .innerText = copyId;
+          })
+}
+
 
 
 
